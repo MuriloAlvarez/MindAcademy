@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.sidebutton{
+    background-color: transparent;
+    border: 0;
+}
+
+.img-logoside30{
+    height: 30px;
+    width: 30px;
+}
+
+.img-logoside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.txt-side{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 90px;
+    position: absolute;
+    left: 40px;
+}
+
+.buttonclose-side{
+    position: absolute;
+    right: 25px;
+}
+
+.img-menu{
+    height: 25px;
+    width: 30px;
+}
+
+.img-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.menuHamb{
+position: absolute;
+left: 25px;
+}
+
+.logo{
+    display: flex !important;
+    justify-content: center;
+
+}
+
+.grp-usuarioside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+    margin-top: 208px;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.txt-usuario{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.img-profileside{
+    width: 40px;
+}
+
+
+.grp-notifside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    gap: 28px;
+    margin-left: 49px;
+}
+
+.txt-notificacao{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.img-notifside{
+    width: 23px;
+}
+
+.grp-ajudaside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 343px;
+    gap: 27px;
+    margin-left: 48px;
+}
+.img-ajudaside{
+    width: 25px;
+}
+
+.txt-ajuda{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.input-single{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TEXTO INICIAL */
+
+.txt-inicio{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 84px 0 25px;
+}
+
+.txt-iniciodiv{
+    margin-top: 90px;
+}
+
+
+
+/* BOTÔES DE CRIAR E BUSCAR */
+
+
+
+.btn-CriarBuscar{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-criar{
+    width: 140px;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 13px;
+
+}
+
+.btn-buscar{
+    width: 195px;
+    height: 35px;
+    background-color: white;
+    border-radius: 34px;
+    color: gray;
+    font-size: 13px;
+}
+
+.icon-buscar{
+    width: 17px;
+}
+
+
+/* CARD DE CURSOS */
+
+
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-cursos{
+    background-color: #F9F9F9;
+    width: 340px;
+    height: 144px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-curso1{
+    width: 96px;
+}
+
+.img-curso1div{
+    display: flex;
+    margin-left: 8px;
+}
+
+.card-infos1{
+    position: relative;
+}
+
+.txt-curso{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.txt-materia{
+    font-size: 12px;
+    font-weight: 300;
+}
+.txt-professor{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card-btneditar{
+    width: 51px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 11px;
+    margin-left: 30px;
+}
+
+
+
+
+

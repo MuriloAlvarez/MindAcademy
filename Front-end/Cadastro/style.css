@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+form{
+
+    width: 350px;
+    height: 200px;
+    padding: 30px;
+    
+}
+
+form .input-single .input:focus ~ label{
+    transform: translateY(-20px);
+    font-size: 0px;
+}
+
+.input-single{
+    position: relative;
+    margin: 40px 0;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 15px 70px;
+    border: 0;
+    border-radius: 32px;
+    background-color: black;
+    color: white;
+}
+
+.img-logomind60{
+    width: 60px;
+    height: 60px;
+}
+
+.icon-logomind60{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.txt-entrarmind{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 106.5%;
+    padding: 0px 45px 0px 45px;
+    margin: 0px;
+}
+
+.txt-entrardiv{
+    margin-top: 100px;
+}
+
+
+.create{
+    margin-top: 330px;
+}
+
+.txt-create{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+}

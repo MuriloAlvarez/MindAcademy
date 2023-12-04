@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.sidebutton{
+    background-color: transparent;
+    border: 0;
+}
+
+.img-logoside30{
+    height: 30px;
+    width: 30px;
+}
+
+.img-logoside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.txt-side{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 90px;
+    position: absolute;
+    left: 40px;
+}
+
+.buttonclose-side{
+    position: absolute;
+    right: 25px;
+}
+
+.img-menu{
+    height: 25px;
+    width: 30px;
+}
+
+.img-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.menuHamb{
+position: absolute;
+left: 25px;
+}
+
+.logo{
+    display: flex !important;
+    justify-content: center;
+}
+
+.grp-usuarioside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+    margin-top: 208px;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.txt-usuario{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.img-profileside{
+    width: 40px;
+}
+
+
+.grp-notifside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    gap: 28px;
+    margin-left: 49px;
+}
+
+.txt-notificacao{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.img-notifside{
+    width: 23px;
+}
+
+.grp-ajudaside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 343px;
+    gap: 27px;
+    margin-left: 48px;
+}
+.img-ajudaside{
+    width: 25px;
+}
+
+.txt-ajuda{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Texto Inicial */
+
+.txt-iniciodiv{
+    margin-top: 90px;
+}
+
+.txt-inicio{
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0 99px 0 25px;
+    margin: 0;
+}
+
+/* Upload de Imagem */
+
+.bg-uploadimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border-radius: 16px;
+    width: 340px;
+    height: 120px;
+    margin-top: 40px;
+}
+
+.img-alter{
+    width: 45px;
+}
+
+.uploadimgdiv{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Inputs de Informação*/
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+form{
+
+    width: 350px;
+    height: 200px;
+    padding: 30px;
+    
+}
+
+form .input-single .input:focus ~ label{
+    transform: translateY(-20px);
+    font-size: 0px;
+}
+
+.input-single{
+    position: relative;
+    margin: 40px 0;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 15px 70px;
+    border: 0;
+    border-radius: 32px;
+    background-color: black;
+    color: white;
+}
