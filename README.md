@@ -56,6 +56,6 @@ Feito por Murilo Alvarez :wave:
 # Como Rodar a aplicacao
 ## BACKEND
 
-entre na pasta /back-end e rode o docker-compose para subir banco de dados com o seguinte comando
-
-    docker-compose up -d
+-> ter o node instalado
+-> rodar o npm install
+-> para rodar o projeto npm start
