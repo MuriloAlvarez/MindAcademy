@@ -42,7 +42,7 @@ A Mind Academy veio para ajudar Professores que desejam criar seus própios curs
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/2YYemjvd25RRDIxcT6IxGz/Untitled?type=design&node-id=0%3A1&mode=design&t=C9hzwKmr8ggutzdh-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
