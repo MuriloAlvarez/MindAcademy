@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Inclua o Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="icon-logomind60">
+        <img
+          class="img-logomind60"
+          src="../Assets/images/LogoMindAcademy60.png"
+          alt=""
+        />
+      </div>
+      <div class="txt-entrardiv">
+        <p class="txt-entrarmind">Entrar no Mind Academy...</p>
+      </div>
+        <section class="form-container">
+          <div class="container">
+            <form id="loginForm">
+              <div class="input-single">
+                <input type="text" id="email-box" class="input">
+                <label for="email-box">Seu usuário</label>
+              </div>
+              <div class="input-single">
+                <input type="password" id="senha-box" class="input">
+                <label for="senha-box">Sua senha</label>
+              </div>
+              <div class="btn"><input type="submit" value="Entrar"></div>
+            </form>
+          </div>
+        </section>
+        <div class="create">
+          <p class="txt-create">Create by Murilo Alvarez</p>
+        </div>
+    </div>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+    
+        const username = document.getElementById('email-box').value;
+        const password = document.getElementById('senha-box').value;
+    
+        axios.post('http://localhost:3000/autenticacao/login', { username, password })
+          .then(function (response) {
+            console.log('Autenticado com sucesso:', response);
+            localStorage.setItem('userToken', response.data.token);
+    
+            window.location.href = '../Inicio/index.html';
+          })
+          .catch(function (error) {
+            console.error('Erro na autenticação:', error);
+          });
+      });
+    </script>
+  </body>
+</html>

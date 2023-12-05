@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <!-- Menu Hamburguer -->
+
+    <div class="header">
+      <div class="menuHamb">
+        <button class="sidebutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions">
+          <img class="img-menu" src="../Assets/images/MenuHamburguer.png" alt="" />
+        </button>
+      </div>
+
+      <div class="logo">
+        <img class="img-logo" src="../Assets/images/LogoMindAcademy50.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Texto inicial -->
+
+    <div class="txt-iniciodiv">
+      <p class="txt-inicio">Seus conteúdos...</p>
+    </div>
+
+    <!-- Botões CRIAR OU BUSCAR -->
+
+    <div class="btn-CriarBuscar">
+      <div class="btn-criardiv">
+        <button class="btn-criar">
+          Criar curso
+        </button>
+      </div>
+      <div class="btn-buscardiv">
+        <button class="btn-buscar">
+          Faça sua busca
+          <img class="icon-buscar" src="../Assets/images/icon-buscar.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <!-- Card de Cursos -->
+    <div id="cursosContainer">^
+
+    </div>
+
+
+  </header>
+
+  <!-- Menu Hamburguer -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="img-logoside">
+      <img class="img-logoside30" src="../Assets/images/LogoMindAcademy30.png" alt="" />
+      <button type="button" class="btn-close buttonclose-side" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="txt-side">Olá, Seja Bem-Vindo</p>
+      <div class="grp-usuarioside">
+        <img class="img-profileside" src="../Assets/images/IconProfileUsuario.png" alt="" />
+        <p class="txt-usuario">Usuário</p>
+      </div>
+      <div class="grp-notifside">
+        <img class="img-notifside" src="../Assets/images/IconNotificacao.png" alt="" />
+        <p class="txt-notificacao">Notificação</p>
+      </div>
+      <div class="grp-ajudaside">
+        <img class="img-ajudaside" src="../Assets/images/IconAjuda.png" alt="" />
+        <p class="txt-ajuda">Ajuda</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function carregarCursos() {
+      const userToken = localStorage.getItem('userToken');
+      console.log('Token recuperado:', userToken);
+
+      axios.get('http://localhost:3000/curso', {
+        headers: {
+          'Authorization': `${userToken}`
+        }
+      })
+        .then(function (response) {
+          console.log(response);
+          const cursos = response.data;
+          const container = document.getElementById('cursosContainer');
+
+          cursos.forEach((curso, index) => {
+            const cursoDiv = document.createElement('div');
+            cursoDiv.innerHTML = `
+                <div class="card1">
+                  <div class="img-curso1div">
+                    <img src="../Assets/images/img-curso1.png" alt="Imagem do Curso">
+                  </div>
+                  <div class="card-infos1">
+                    <p>${curso.nomecurso}</p>
+                    <p>${curso.materia}</p>
+                    <p>${curso.professor}</p>
+                  </div>
+  
+                  <div class="card-btn">
+                    <button class="card-btneditar">
+                      Editar
+                    </button>
+                  </div>
+                </div>
+              `;
+            container.appendChild(cursoDiv);
+          });
+        })
+        .catch(function (error) {
+          console.error('Erro ao carregar os cursos:', error);
+        });
+    }
+
+    window.onload = carregarCursos;
+  </script>
+</body>
+
+</html>
