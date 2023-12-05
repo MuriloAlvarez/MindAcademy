@@ -19,7 +19,7 @@ Site desenvolvido para o processo seletivo da Mind Consulting <br/>
 <br>
 
 <p align="center">
-  <img alt="projeto Mind Academy" src="./Front-end/Assets/images/bg-readmemindacademy.png" width="100%">
+  <img alt="projeto Mind Academy" src="./front/Assets/images/bg-readmemindacademy.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
