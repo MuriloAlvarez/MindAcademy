@@ -55,7 +55,7 @@ Esse projeto está sob a licença MIT.
 ### Instalação do Node e verificação
 
 - Certifique-se de que o Node já esteja baixado em sua máquina;
-```
+```ruby
 node --version
 ```
 - Caso não esteja, clique no link abaixo para ver o passo a passo do download (MacOS, Windows ou Linux);
@@ -75,9 +75,41 @@ node --version
 - Documento - db.js;
 - Linha de código 6;
 - Insira as informações de seu banco da maneira sinalizada abaixo;
-```
+```ruby
 mysql://username:password@localhost:3306/nomedobanco
 ```
+---
 
+### Instalando as dependências e iniciando a aplicação
+- Para fazer o download das dependências, utilize o código abaixo no terminal do seu editor de código;
+```ruby
+npm install
+```
+- Para iniciar nossa aplicação, vamos utilizar o terminal novamente, inserindo o código abaixo;
+```ruby
+npm start
+```
+---
+### Acessando nossa aplicação
+- Nossa aplicação já esta iniciada, agora precisamos acessar ela !
+#### Local do Documento
+- Pasta - front;
+- Pasta - Cadastro;
+- Documento - index.html;
+
+#### Rodando a aplicação
+- É necessário ter a extensão **Live Server** instalado em seu editor de código;
+- Com a extensão instalada, clique no botão localizado no canto inferior de seu editor de código -> **Go Live**;
+
+#### Selecionando as dimensões corretas
+- Com a aplicação rodando em seu navegador, abra o painel de **Inspecionar**
+- Selecione a opção de Dimensão -> ** Pixel 7 **
+
+#### Inserindo dados de nosso usuário
+- Agora que nossa aplicação já está rodando em seu navegador e esta nas dimensões corretas, vamos inserir os dados de Login que estão listados abaixo;
+```ruby
+username: admin
+password: 123
+```
 
 
