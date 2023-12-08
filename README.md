@@ -31,7 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 - MySQL
-- TypeScript
+- Booststrap
+- Node.JS
 
 ## 💻 Projeto
 
@@ -48,14 +49,35 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 Esse projeto está sob a licença MIT.
 
+
+## ⚙️ Como Rodar a aplicação 
+
+### Instalação do Node e verificação
+
+- Certifique-se de que o Node já esteja baixado em sua máquina;
+```
+node --version
+```
+- Caso não esteja, clique no link abaixo para ver o passo a passo do download (MacOS, Windows ou Linux);
+
+<a href="https://www.alura.com.br/artigos/como-instalar-node-js-windows-linux-macos"> Clique aqui 👈</a>
+
 ---
 
-Feito por Murilo Alvarez :wave: 
+### Rodando Banco de Dados e alterando a Conection String
+- Criar e rodar o banco de dados em sua máquina;
+#### Local do Documento 
+- Pasta - scripts;
+- Documento - criacao-db.js;
+
+#### Alterar as informações da Conection Sting;
+- Pasta - src;
+- Documento - db.js;
+- Linha de código 6;
+- Insira as informações de seu banco da maneira sinalizada abaixo;
+```
+mysql://username:password@localhost:3306/nomedobanco
+```
 
 
-# Como Rodar a aplicacao
-## BACKEND
 
--> ter o node instalado
--> rodar o npm install
--> para rodar o projeto npm start
